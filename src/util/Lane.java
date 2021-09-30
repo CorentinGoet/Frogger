@@ -23,6 +23,7 @@ public class Lane {
      * @param density Probabilite d'apparition d'une voiture sur cette voie.
      * @param direction Sens de circulation sur cette voie (Direction.left ou Direction.right).
      * @param length longueur de la voie.
+     * @since 1.0
      */
     public Lane(int speed, int density, Direction direction, int length) {
         this.speed = speed;
@@ -36,6 +37,7 @@ public class Lane {
     /**
      * Retourne la vitesse de circulation sur cette voie.
      * @return speed
+     * @since 1.0
      */
     public int getSpeed() {
         return speed;
@@ -44,6 +46,7 @@ public class Lane {
     /**
      * Met a jour la vitesse de circulation sur cette voie.
      * @param speed vitesse
+     * @since 1.0
      */
     public void setSpeed(int speed) {
         this.speed = speed;
@@ -52,6 +55,7 @@ public class Lane {
     /**
      * Retourne la probabilité d'apparition d'une voiture sur cette voie.
      * @return density
+     * @since 1.0
      */
     public int getDensity() {
         return density;
@@ -60,6 +64,7 @@ public class Lane {
     /**
      * Met a jour la probabilite d'apparition d'une voiture sur cette voie.
      * @param density probabilite
+     * @since 1.0
      */
     public void setDensity(int density) {
         this.density = density;
@@ -68,6 +73,7 @@ public class Lane {
     /**
      * Retourne la direction de circulation sur cette voie.
      * @return direction
+     * @since 1.0
      */
     public Direction getDirection() {
         return direction;
@@ -77,6 +83,7 @@ public class Lane {
      * Met a jour le sens de circulation des voitures sur la voie.
      * @param direction sens de circulation
      * @throws IllegalArgumentException La direction fournie pour la voie est incompatible (Direction.up ou Direction.down)
+     * @since 1.0
      */
     public void setDirection(Direction direction) {
         if(direction == Direction.down || direction == Direction.up){
@@ -89,6 +96,7 @@ public class Lane {
     /**
      * Retourne la liste des cases de la voie.
      * @return cases
+     * @since 1.0
      */
     public ArrayList<Case> getCases() {
         return cases;
@@ -96,6 +104,7 @@ public class Lane {
 
     /**
      * Methode de creation de la liste des cases pour la voie.
+     * @since 1.0
      */
     public ArrayList<Case> init_cases(){
         ArrayList<Case> cases = new ArrayList<>();
@@ -127,6 +136,7 @@ public class Lane {
     /**
      * Methode d'execution des tests de la classe Lane.
      * @param args args
+     * @since 1.0
      */
     public static void main(String[] args) {
         int length = 10;

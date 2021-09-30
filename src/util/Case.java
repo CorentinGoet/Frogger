@@ -12,6 +12,7 @@ public class Case {
     /**
      * Constructeur de la classe Case précisant une taille.
      * @param size taille
+     * @since 1.0
      */
     public Case(int size) {
         this.size = size;
@@ -19,6 +20,7 @@ public class Case {
 
     /**
      * Constructeur de la classe case sans parametres.
+     * @since 1.0
      */
     public Case() {
         this.size = 1;
@@ -27,6 +29,7 @@ public class Case {
     /**
      * retourne la taille de la case.
      * @return size
+     * @since 1.0
      */
     public int getSize() {
         return size;
