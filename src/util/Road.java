@@ -7,6 +7,7 @@ package util;
  * @version 1.0
  */
 public class Road {
-    private int nb_voies;
+    private int nbLanes;
+    private int length;
 
 }

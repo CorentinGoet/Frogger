@@ -9,10 +9,25 @@ package util;
 public class Case {
     private int size;
 
+    /**
+     * Constructeur de la classe Case précisant une taille.
+     * @param size taille
+     */
     public Case(int size) {
         this.size = size;
     }
 
+    /**
+     * Constructeur de la classe case sans parametres.
+     */
+    public Case() {
+        this.size = 1;
+    }
+
+    /**
+     * retourne la taille de la case.
+     * @return
+     */
     public int getSize() {
         return size;
     }
