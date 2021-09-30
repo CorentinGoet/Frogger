@@ -26,9 +26,14 @@ public class Case {
 
     /**
      * retourne la taille de la case.
-     * @return
+     * @return size
      */
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+        return "| " + this.size + " |";
     }
 }
