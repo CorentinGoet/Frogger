@@ -1,5 +1,7 @@
 package util;
 
+import frog.Frog;
+
 import java.util.ArrayList;
 
 /**
@@ -26,6 +28,23 @@ public class Road {
     }
 
     /**
+     * Constructeur comprenant le placement de la grenouille.
+     * @param nbLanes nombre de voies
+     * @param length longueur des voies
+     * @param frog grenouille
+     */
+    public Road(int nbLanes, int length, Frog frog) {
+        this.nbLanes = nbLanes;
+        this.length = length;
+        this.init_lanes();
+        this.initFrog(frog);
+    }
+
+    public void initFrog(Frog frog){
+
+    }
+
+    /**
      * Methode d'initialisation de la liste des voies.
      */
     private void init_lanes(){
@@ -40,11 +59,27 @@ public class Road {
     @Override
     public String toString() {
         String s = "";
-        for (int i = 0; i < this.nbLanes; i++){
+        for (int i = this.nbLanes-1; i >= 0; i--){
             s += this.lanes.get(i).toString();
             s += "\n";
         }
         return s;
+    }
+
+    public ArrayList<Lane> getLanes() {
+        return lanes;
+    }
+
+    public void setLanes(ArrayList<Lane> lanes) {
+        this.lanes = lanes;
+    }
+
+    public int getNbLanes() {
+        return nbLanes;
+    }
+
+    public int getLength() {
+        return length;
     }
 
     /**

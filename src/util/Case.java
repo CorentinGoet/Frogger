@@ -48,7 +48,7 @@ public class Case {
 
     /**
      * Met a jour le contenu de la case.
-     * @param content
+     * @param content contenu
      */
     public void setContent(Frog content) {
         this.content = content;
@@ -57,7 +57,7 @@ public class Case {
     @Override
     public String toString() {
         if(this.content == null){
-            return "      ";
+            return "|      |";
         }else{
             return "|" + this.getContent() + "|";
         }

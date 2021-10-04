@@ -104,6 +104,7 @@ public class Lane {
 
     /**
      * Methode de creation de la liste des cases pour la voie.
+     * @return
      * @since 1.0
      */
     public ArrayList<Case> init_cases(){
