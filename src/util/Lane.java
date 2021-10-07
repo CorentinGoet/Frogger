@@ -1,7 +1,6 @@
 package util;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -31,7 +30,6 @@ public class Lane {
         this.setDirection(direction);
         this.length = length;
         this.cases = this.init_cases();
-
     }
 
     /**
